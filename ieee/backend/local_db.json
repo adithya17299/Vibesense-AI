@@ -1,0 +1,3874 @@
+{
+  "reports": [
+    {
+      "timestamp": "2026-04-03T10:32:00.000000+00:00",
+      "structure_id": "Bridge-Alpha",
+      "frequency": 2.45,
+      "amplitude": 0.8542,
+      "health_score": 42.0,
+      "threat_level": "DANGER",
+      "confidence": 0.942,
+      "snapshot_url": "/assets/crack.jpg",
+      "id": 1
+    },
+    {
+      "timestamp": "2026-04-03T10:31:30.000000+00:00",
+      "structure_id": "Bridge-Beta",
+      "frequency": 2.12,
+      "amplitude": 0.4215,
+      "health_score": 68.5,
+      "threat_level": "WARNING",
+      "confidence": 0.887,
+      "snapshot_url": "/assets/crack.jpg",
+      "id": 2
+    },
+    {
+      "timestamp": "2026-04-03T10:30:15.000000+00:00",
+      "structure_id": "Main-Bridge",
+      "frequency": 2.78,
+      "amplitude": 1.1245,
+      "health_score": 15.2,
+      "threat_level": "DANGER",
+      "confidence": 0.976,
+      "snapshot_url": "/assets/crack.jpg",
+      "id": 3
+    },
+    {
+      "timestamp": "2026-04-03T11:20:35.678218+00:00",
+      "structure_id": "person",
+      "frequency": 0.46,
+      "amplitude": 2.9857,
+      "health_score": 25.7,
+      "threat_level": "DANGER",
+      "confidence": 0.896588146686554,
+      "snapshot_url": "",
+      "id": 4
+    },
+    {
+      "timestamp": "2026-04-03T11:20:38.822810+00:00",
+      "structure_id": "person",
+      "frequency": 0.63,
+      "amplitude": 7.2604,
+      "health_score": 14.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8987367153167725,
+      "snapshot_url": "",
+      "id": 5
+    },
+    {
+      "timestamp": "2026-04-03T11:33:00.161244+00:00",
+      "structure_id": "person",
+      "frequency": 0.83,
+      "amplitude": 1.58,
+      "health_score": 6.3,
+      "threat_level": "DANGER",
+      "confidence": 0.8400461077690125,
+      "snapshot_url": "",
+      "id": 6
+    },
+    {
+      "timestamp": "2026-04-03T11:33:03.406396+00:00",
+      "structure_id": "person",
+      "frequency": 0.49,
+      "amplitude": 3.4416,
+      "health_score": 6.1,
+      "threat_level": "DANGER",
+      "confidence": 0.8123888373374939,
+      "snapshot_url": "",
+      "id": 7
+    },
+    {
+      "timestamp": "2026-04-03T11:33:11.988312+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 4.6529,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8917192220687866,
+      "snapshot_url": "",
+      "id": 8
+    },
+    {
+      "timestamp": "2026-04-03T11:33:22.198017+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.7059,
+      "health_score": 12.5,
+      "threat_level": "DANGER",
+      "confidence": 0.8996254801750183,
+      "snapshot_url": "",
+      "id": 9
+    },
+    {
+      "timestamp": "2026-04-03T11:33:25.434846+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.9339,
+      "health_score": 9.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8735929131507874,
+      "snapshot_url": "",
+      "id": 10
+    },
+    {
+      "timestamp": "2026-04-03T11:33:34.869845+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.4489,
+      "health_score": 11.2,
+      "threat_level": "DANGER",
+      "confidence": 0.8884705305099487,
+      "snapshot_url": "",
+      "id": 11
+    },
+    {
+      "timestamp": "2026-04-03T11:33:49.348646+00:00",
+      "structure_id": "chair",
+      "frequency": 0.48,
+      "amplitude": 0.7914,
+      "health_score": 23.8,
+      "threat_level": "DANGER",
+      "confidence": 0.36644282937049866,
+      "snapshot_url": "",
+      "id": 12
+    },
+    {
+      "timestamp": "2026-04-03T11:33:58.255925+00:00",
+      "structure_id": "tv",
+      "frequency": 0.57,
+      "amplitude": 2.6785,
+      "health_score": 8.4,
+      "threat_level": "DANGER",
+      "confidence": 0.6365261077880859,
+      "snapshot_url": "",
+      "id": 13
+    },
+    {
+      "timestamp": "2026-04-03T11:34:09.362436+00:00",
+      "structure_id": "tv",
+      "frequency": 0.23,
+      "amplitude": 14.8719,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6911635398864746,
+      "snapshot_url": "",
+      "id": 14
+    },
+    {
+      "timestamp": "2026-04-03T11:34:20.346857+00:00",
+      "structure_id": "laptop",
+      "frequency": 0.23,
+      "amplitude": 1.5753,
+      "health_score": 6.3,
+      "threat_level": "DANGER",
+      "confidence": 0.30434003472328186,
+      "snapshot_url": "",
+      "id": 15
+    },
+    {
+      "timestamp": "2026-04-03T11:34:55.446397+00:00",
+      "structure_id": "tv",
+      "frequency": 1.17,
+      "amplitude": 5.0543,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.529739260673523,
+      "snapshot_url": "",
+      "id": 16
+    },
+    {
+      "timestamp": "2026-04-03T11:34:58.616226+00:00",
+      "structure_id": "tv",
+      "frequency": 0.7,
+      "amplitude": 27.8395,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6657024025917053,
+      "snapshot_url": "",
+      "id": 17
+    },
+    {
+      "timestamp": "2026-04-03T11:35:03.136777+00:00",
+      "structure_id": "tv",
+      "frequency": 0.23,
+      "amplitude": 6.3503,
+      "health_score": 6.5,
+      "threat_level": "DANGER",
+      "confidence": 0.7254817485809326,
+      "snapshot_url": "",
+      "id": 18
+    },
+    {
+      "timestamp": "2026-04-03T11:35:08.101899+00:00",
+      "structure_id": "backpack",
+      "frequency": 0.23,
+      "amplitude": 260.127,
+      "health_score": 15.7,
+      "threat_level": "DANGER",
+      "confidence": 0.2964380085468292,
+      "snapshot_url": "",
+      "id": 19
+    },
+    {
+      "timestamp": "2026-04-03T11:35:11.475310+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 105.597,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.29771947860717773,
+      "snapshot_url": "",
+      "id": 20
+    },
+    {
+      "timestamp": "2026-04-03T15:39:38.733328+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.7276,
+      "health_score": 5.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9019312262535095,
+      "snapshot_url": "",
+      "id": 21
+    },
+    {
+      "timestamp": "2026-04-03T15:39:46.466142+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 5.8237,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8645558953285217,
+      "snapshot_url": "",
+      "id": 22
+    },
+    {
+      "timestamp": "2026-04-03T15:39:54.039392+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.5571,
+      "health_score": 9.5,
+      "threat_level": "DANGER",
+      "confidence": 0.9455608129501343,
+      "snapshot_url": "",
+      "id": 23
+    },
+    {
+      "timestamp": "2026-04-03T15:40:04.643488+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.0717,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9426785707473755,
+      "snapshot_url": "",
+      "id": 24
+    },
+    {
+      "timestamp": "2026-04-03T15:40:32.753723+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.4127,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.94047611951828,
+      "snapshot_url": "",
+      "id": 25
+    },
+    {
+      "timestamp": "2026-04-03T15:40:47.633406+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.0507,
+      "health_score": 15.9,
+      "threat_level": "DANGER",
+      "confidence": 0.942046046257019,
+      "snapshot_url": "",
+      "id": 26
+    },
+    {
+      "timestamp": "2026-04-03T15:41:00.781563+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 2.7635,
+      "health_score": 10.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9545499682426453,
+      "snapshot_url": "",
+      "id": 27
+    },
+    {
+      "timestamp": "2026-04-03T15:41:06.138004+00:00",
+      "structure_id": "person",
+      "frequency": 11.25,
+      "amplitude": 8.8025,
+      "health_score": 9.3,
+      "threat_level": "DANGER",
+      "confidence": 0.607418954372406,
+      "snapshot_url": "",
+      "id": 28
+    },
+    {
+      "timestamp": "2026-04-03T15:41:09.421570+00:00",
+      "structure_id": "bottle",
+      "frequency": 4.29,
+      "amplitude": 128.2504,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8751177191734314,
+      "snapshot_url": "",
+      "id": 29
+    },
+    {
+      "timestamp": "2026-04-03T15:41:21.604059+00:00",
+      "structure_id": "dining table",
+      "frequency": 0.23,
+      "amplitude": 2.0681,
+      "health_score": 5.9,
+      "threat_level": "DANGER",
+      "confidence": 0.5868850350379944,
+      "snapshot_url": "",
+      "id": 30
+    },
+    {
+      "timestamp": "2026-04-03T15:41:24.854484+00:00",
+      "structure_id": "bottle",
+      "frequency": 0.23,
+      "amplitude": 0.9543,
+      "health_score": 9.5,
+      "threat_level": "DANGER",
+      "confidence": 0.8399556279182434,
+      "snapshot_url": "",
+      "id": 31
+    },
+    {
+      "timestamp": "2026-04-03T15:42:06.350177+00:00",
+      "structure_id": "bed",
+      "frequency": 0.94,
+      "amplitude": 128.9181,
+      "health_score": 8.0,
+      "threat_level": "DANGER",
+      "confidence": 0.3252100944519043,
+      "snapshot_url": "",
+      "id": 32
+    },
+    {
+      "timestamp": "2026-04-03T15:42:09.484949+00:00",
+      "structure_id": "bottle",
+      "frequency": 0.23,
+      "amplitude": 59.3744,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9142343997955322,
+      "snapshot_url": "",
+      "id": 33
+    },
+    {
+      "timestamp": "2026-04-03T15:42:12.644802+00:00",
+      "structure_id": "bottle",
+      "frequency": 0.23,
+      "amplitude": 2.6264,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.48867541551589966,
+      "snapshot_url": "",
+      "id": 34
+    },
+    {
+      "timestamp": "2026-04-03T15:44:47.505334+00:00",
+      "structure_id": "person",
+      "frequency": 0.48,
+      "amplitude": 6.7979,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9503846168518066,
+      "snapshot_url": "",
+      "id": 35
+    },
+    {
+      "timestamp": "2026-04-03T15:45:14.343538+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.542,
+      "health_score": 5.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9554586410522461,
+      "snapshot_url": "",
+      "id": 36
+    },
+    {
+      "timestamp": "2026-04-03T15:46:31.401461+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.1871,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8612707257270813,
+      "snapshot_url": "",
+      "id": 37
+    },
+    {
+      "timestamp": "2026-04-03T15:46:39.945276+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 6.0003,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6498538851737976,
+      "snapshot_url": "",
+      "id": 38
+    },
+    {
+      "timestamp": "2026-04-03T15:52:36.692830+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 115.3172,
+      "health_score": 48.5,
+      "threat_level": "DANGER",
+      "confidence": 0.9009268879890442,
+      "snapshot_url": "",
+      "id": 39
+    },
+    {
+      "timestamp": "2026-04-03T15:52:39.880977+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 0.8922,
+      "health_score": 13.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9196087718009949,
+      "snapshot_url": "",
+      "id": 40
+    },
+    {
+      "timestamp": "2026-04-03T15:53:30.672906+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 4.3868,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9140235185623169,
+      "snapshot_url": "",
+      "id": 41
+    },
+    {
+      "timestamp": "2026-04-03T15:53:33.833996+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.6175,
+      "health_score": 8.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9069694876670837,
+      "snapshot_url": "",
+      "id": 42
+    },
+    {
+      "timestamp": "2026-04-03T15:53:58.416035+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 11.5528,
+      "health_score": 32.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9116109013557434,
+      "snapshot_url": "",
+      "id": 43
+    },
+    {
+      "timestamp": "2026-04-03T15:54:14.434977+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.6153,
+      "health_score": 6.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9256625771522522,
+      "snapshot_url": "",
+      "id": 44
+    },
+    {
+      "timestamp": "2026-04-03T15:54:18.537553+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 76.6626,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8419908285140991,
+      "snapshot_url": "",
+      "id": 45
+    },
+    {
+      "timestamp": "2026-04-03T15:54:21.684326+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 31.4905,
+      "health_score": 5.8,
+      "threat_level": "DANGER",
+      "confidence": 0.911169171333313,
+      "snapshot_url": "",
+      "id": 46
+    },
+    {
+      "timestamp": "2026-04-03T15:54:27.130344+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 6.9828,
+      "health_score": 5.6,
+      "threat_level": "DANGER",
+      "confidence": 0.9402878880500793,
+      "snapshot_url": "",
+      "id": 47
+    },
+    {
+      "timestamp": "2026-04-03T15:54:40.684498+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 0.8887,
+      "health_score": 20.8,
+      "threat_level": "DANGER",
+      "confidence": 0.9444184303283691,
+      "snapshot_url": "",
+      "id": 48
+    },
+    {
+      "timestamp": "2026-04-03T15:54:54.872478+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.5718,
+      "health_score": 14.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9527421593666077,
+      "snapshot_url": "",
+      "id": 49
+    },
+    {
+      "timestamp": "2026-04-03T15:57:45.299494+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.7803,
+      "health_score": 5.7,
+      "threat_level": "DANGER",
+      "confidence": 0.9487325549125671,
+      "snapshot_url": "",
+      "id": 50
+    },
+    {
+      "timestamp": "2026-04-03T15:57:55.454285+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 0.9123,
+      "health_score": 12.4,
+      "threat_level": "DANGER",
+      "confidence": 0.9236425757408142,
+      "snapshot_url": "",
+      "id": 51
+    },
+    {
+      "timestamp": "2026-04-03T15:58:00.295858+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 6.7164,
+      "health_score": 8.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9317236542701721,
+      "snapshot_url": "",
+      "id": 52
+    },
+    {
+      "timestamp": "2026-04-03T15:58:11.213723+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 3.4862,
+      "health_score": 20.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9515960216522217,
+      "snapshot_url": "",
+      "id": 53
+    },
+    {
+      "timestamp": "2026-04-03T15:58:53.529161+00:00",
+      "structure_id": "person",
+      "frequency": 1.17,
+      "amplitude": 28.1343,
+      "health_score": 22.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9447051882743835,
+      "snapshot_url": "",
+      "id": 54
+    },
+    {
+      "timestamp": "2026-04-03T15:58:57.193323+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.0249,
+      "health_score": 18.6,
+      "threat_level": "DANGER",
+      "confidence": 0.9382577538490295,
+      "snapshot_url": "",
+      "id": 55
+    },
+    {
+      "timestamp": "2026-04-03T15:59:04.613269+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.5586,
+      "health_score": 7.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9575231075286865,
+      "snapshot_url": "",
+      "id": 56
+    },
+    {
+      "timestamp": "2026-04-03T15:59:50.700803+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 36.0744,
+      "health_score": 40.0,
+      "threat_level": "DANGER",
+      "confidence": 0.929374098777771,
+      "snapshot_url": "",
+      "id": 57
+    },
+    {
+      "timestamp": "2026-04-03T15:59:57.489391+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 6.8547,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9297977089881897,
+      "snapshot_url": "",
+      "id": 58
+    },
+    {
+      "timestamp": "2026-04-03T16:00:04.263384+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 14.4154,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9378713369369507,
+      "snapshot_url": "",
+      "id": 59
+    },
+    {
+      "timestamp": "2026-04-03T16:00:07.411052+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 1.8502,
+      "health_score": 11.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9391679763793945,
+      "snapshot_url": "",
+      "id": 60
+    },
+    {
+      "timestamp": "2026-04-03T16:00:10.547700+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 3.3024,
+      "health_score": 5.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9125721454620361,
+      "snapshot_url": "",
+      "id": 61
+    },
+    {
+      "timestamp": "2026-04-03T16:00:25.066874+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 54.4367,
+      "health_score": 30.6,
+      "threat_level": "DANGER",
+      "confidence": 0.9355465173721313,
+      "snapshot_url": "",
+      "id": 62
+    },
+    {
+      "timestamp": "2026-04-03T16:00:29.071993+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 8.0399,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9542407989501953,
+      "snapshot_url": "",
+      "id": 63
+    },
+    {
+      "timestamp": "2026-04-03T16:01:02.434614+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 27.466,
+      "health_score": 6.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9121220111846924,
+      "snapshot_url": "",
+      "id": 64
+    },
+    {
+      "timestamp": "2026-04-03T16:01:13.758469+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 10.3616,
+      "health_score": 5.5,
+      "threat_level": "DANGER",
+      "confidence": 0.8925489783287048,
+      "snapshot_url": "",
+      "id": 65
+    },
+    {
+      "timestamp": "2026-04-03T16:01:16.906464+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 5.4358,
+      "health_score": 5.6,
+      "threat_level": "DANGER",
+      "confidence": 0.9357781410217285,
+      "snapshot_url": "",
+      "id": 66
+    },
+    {
+      "timestamp": "2026-04-03T16:01:40.138513+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 2.3032,
+      "health_score": 7.7,
+      "threat_level": "DANGER",
+      "confidence": 0.7487186193466187,
+      "snapshot_url": "",
+      "id": 67
+    },
+    {
+      "timestamp": "2026-04-03T16:01:58.072851+00:00",
+      "structure_id": "person",
+      "frequency": 2.81,
+      "amplitude": 6.6148,
+      "health_score": 6.4,
+      "threat_level": "DANGER",
+      "confidence": 0.9415044784545898,
+      "snapshot_url": "",
+      "id": 68
+    },
+    {
+      "timestamp": "2026-04-03T16:02:01.212346+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.9051,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.692166805267334,
+      "snapshot_url": "",
+      "id": 69
+    },
+    {
+      "timestamp": "2026-04-03T16:02:09.289595+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 24.1752,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.35333600640296936,
+      "snapshot_url": "",
+      "id": 70
+    },
+    {
+      "timestamp": "2026-04-03T16:02:12.502398+00:00",
+      "structure_id": "person",
+      "frequency": 0.94,
+      "amplitude": 2.7852,
+      "health_score": 12.5,
+      "threat_level": "DANGER",
+      "confidence": 0.3778529167175293,
+      "snapshot_url": "",
+      "id": 71
+    },
+    {
+      "timestamp": "2026-04-03T16:03:59.493007+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.4811,
+      "health_score": 12.2,
+      "threat_level": "DANGER",
+      "confidence": 0.917148232460022,
+      "snapshot_url": "",
+      "id": 72
+    },
+    {
+      "timestamp": "2026-04-03T16:04:20.894502+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 5.7212,
+      "health_score": 10.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9465365409851074,
+      "snapshot_url": "",
+      "id": 73
+    },
+    {
+      "timestamp": "2026-04-03T16:04:24.087294+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 0.7603,
+      "health_score": 14.6,
+      "threat_level": "DANGER",
+      "confidence": 0.9483577013015747,
+      "snapshot_url": "",
+      "id": 74
+    },
+    {
+      "timestamp": "2026-04-04T04:07:09.690658+00:00",
+      "structure_id": "person",
+      "frequency": 0.0,
+      "amplitude": 11.0108,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9443888664245605,
+      "snapshot_url": "",
+      "id": 75
+    },
+    {
+      "timestamp": "2026-04-04T04:07:13.390012+00:00",
+      "structure_id": "person",
+      "frequency": 1.3,
+      "amplitude": 12.0278,
+      "health_score": 6.7,
+      "threat_level": "DANGER",
+      "confidence": 0.9439897537231445,
+      "snapshot_url": "",
+      "id": 76
+    },
+    {
+      "timestamp": "2026-04-04T04:07:16.997045+00:00",
+      "structure_id": "person",
+      "frequency": 1.76,
+      "amplitude": 5.828,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9392092823982239,
+      "snapshot_url": "",
+      "id": 77
+    },
+    {
+      "timestamp": "2026-04-04T04:07:23.772813+00:00",
+      "structure_id": "person",
+      "frequency": 0.55,
+      "amplitude": 0.7593,
+      "health_score": 10.6,
+      "threat_level": "DANGER",
+      "confidence": 0.8931744694709778,
+      "snapshot_url": "",
+      "id": 78
+    },
+    {
+      "timestamp": "2026-04-04T04:07:27.373230+00:00",
+      "structure_id": "person",
+      "frequency": 0.45,
+      "amplitude": 4.1856,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9476524591445923,
+      "snapshot_url": "",
+      "id": 79
+    },
+    {
+      "timestamp": "2026-04-04T04:07:31.030915+00:00",
+      "structure_id": "person",
+      "frequency": 0.38,
+      "amplitude": 23.629,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7860193848609924,
+      "snapshot_url": "",
+      "id": 80
+    },
+    {
+      "timestamp": "2026-04-04T04:07:34.412123+00:00",
+      "structure_id": "person",
+      "frequency": 0.34,
+      "amplitude": 7.288,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9392874240875244,
+      "snapshot_url": "",
+      "id": 81
+    },
+    {
+      "timestamp": "2026-04-04T04:07:38.030075+00:00",
+      "structure_id": "person",
+      "frequency": 0.3,
+      "amplitude": 16.8978,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9264432191848755,
+      "snapshot_url": "",
+      "id": 82
+    },
+    {
+      "timestamp": "2026-04-04T04:07:41.570557+00:00",
+      "structure_id": "person",
+      "frequency": 0.27,
+      "amplitude": 10.1468,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9260405898094177,
+      "snapshot_url": "",
+      "id": 83
+    },
+    {
+      "timestamp": "2026-04-04T04:07:48.462663+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 11.1666,
+      "health_score": 5.3,
+      "threat_level": "DANGER",
+      "confidence": 0.888775110244751,
+      "snapshot_url": "",
+      "id": 84
+    },
+    {
+      "timestamp": "2026-04-04T04:07:52.071951+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 7.0764,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9191124439239502,
+      "snapshot_url": "",
+      "id": 85
+    },
+    {
+      "timestamp": "2026-04-04T04:07:55.486177+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 4.8438,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9268500208854675,
+      "snapshot_url": "",
+      "id": 86
+    },
+    {
+      "timestamp": "2026-04-04T04:07:59.067371+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 1.2362,
+      "health_score": 16.7,
+      "threat_level": "DANGER",
+      "confidence": 0.7520514130592346,
+      "snapshot_url": "",
+      "id": 87
+    },
+    {
+      "timestamp": "2026-04-04T04:08:02.647923+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.2337,
+      "health_score": 10.7,
+      "threat_level": "DANGER",
+      "confidence": 0.932941734790802,
+      "snapshot_url": "",
+      "id": 88
+    },
+    {
+      "timestamp": "2026-04-04T04:08:10.022717+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 11.3419,
+      "health_score": 10.1,
+      "threat_level": "DANGER",
+      "confidence": 0.9253509640693665,
+      "snapshot_url": "",
+      "id": 89
+    },
+    {
+      "timestamp": "2026-04-04T04:08:13.782649+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.1888,
+      "health_score": 12.8,
+      "threat_level": "DANGER",
+      "confidence": 0.9048497676849365,
+      "snapshot_url": "",
+      "id": 90
+    },
+    {
+      "timestamp": "2026-04-04T05:49:32.101693+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.6,
+      "amplitude": 0.8363,
+      "health_score": 17.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7023876905441284,
+      "snapshot_url": "",
+      "id": 91
+    },
+    {
+      "timestamp": "2026-04-04T05:49:39.870472+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.23,
+      "amplitude": 2.3737,
+      "health_score": 9.2,
+      "threat_level": "DANGER",
+      "confidence": 0.4767945110797882,
+      "snapshot_url": "",
+      "id": 92
+    },
+    {
+      "timestamp": "2026-04-04T05:49:46.691427+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.47,
+      "amplitude": 1.9227,
+      "health_score": 5.9,
+      "threat_level": "DANGER",
+      "confidence": 0.302553653717041,
+      "snapshot_url": "",
+      "id": 93
+    },
+    {
+      "timestamp": "2026-04-04T05:50:30.600788+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.47,
+      "amplitude": 3.9148,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.49501362442970276,
+      "snapshot_url": "",
+      "id": 94
+    },
+    {
+      "timestamp": "2026-04-04T05:50:34.972631+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 2.3096,
+      "health_score": 20.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8762353658676147,
+      "snapshot_url": "",
+      "id": 95
+    },
+    {
+      "timestamp": "2026-04-04T05:50:54.984089+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.23,
+      "amplitude": 0.9771,
+      "health_score": 10.2,
+      "threat_level": "DANGER",
+      "confidence": 0.31622716784477234,
+      "snapshot_url": "",
+      "id": 96
+    },
+    {
+      "timestamp": "2026-04-04T05:50:58.695139+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.23,
+      "amplitude": 6.156,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6893989443778992,
+      "snapshot_url": "",
+      "id": 97
+    },
+    {
+      "timestamp": "2026-04-04T05:51:07.256331+00:00",
+      "structure_id": "umbrella",
+      "frequency": 1.17,
+      "amplitude": 0.896,
+      "health_score": 14.8,
+      "threat_level": "DANGER",
+      "confidence": 0.47903385758399963,
+      "snapshot_url": "",
+      "id": 98
+    },
+    {
+      "timestamp": "2026-04-04T05:51:24.683887+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.23,
+      "amplitude": 1.8304,
+      "health_score": 5.5,
+      "threat_level": "DANGER",
+      "confidence": 0.5551966428756714,
+      "snapshot_url": "",
+      "id": 99
+    },
+    {
+      "timestamp": "2026-04-04T05:51:48.336784+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.47,
+      "amplitude": 2.3362,
+      "health_score": 6.3,
+      "threat_level": "DANGER",
+      "confidence": 0.301535964012146,
+      "snapshot_url": "",
+      "id": 100
+    },
+    {
+      "timestamp": "2026-04-04T05:52:21.314968+00:00",
+      "structure_id": "umbrella",
+      "frequency": 0.47,
+      "amplitude": 0.8282,
+      "health_score": 26.5,
+      "threat_level": "DANGER",
+      "confidence": 0.5466854572296143,
+      "snapshot_url": "",
+      "id": 101
+    },
+    {
+      "timestamp": "2026-04-04T06:42:42.049313+00:00",
+      "structure_id": "person",
+      "frequency": 0.61,
+      "amplitude": 5.1169,
+      "health_score": 6.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9401652216911316,
+      "snapshot_url": "",
+      "id": 102
+    },
+    {
+      "timestamp": "2026-04-04T07:07:23.924403+00:00",
+      "structure_id": "person",
+      "frequency": 1.88,
+      "amplitude": 1.5538,
+      "health_score": 11.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9258492588996887,
+      "snapshot_url": "",
+      "id": 103
+    },
+    {
+      "timestamp": "2026-04-04T07:07:27.260916+00:00",
+      "structure_id": "person",
+      "frequency": 0.91,
+      "amplitude": 3.924,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8611510992050171,
+      "snapshot_url": "",
+      "id": 104
+    },
+    {
+      "timestamp": "2026-04-04T07:07:30.652759+00:00",
+      "structure_id": "person",
+      "frequency": 1.2,
+      "amplitude": 3.1708,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8897229433059692,
+      "snapshot_url": "",
+      "id": 105
+    },
+    {
+      "timestamp": "2026-04-04T07:07:34.817707+00:00",
+      "structure_id": "person",
+      "frequency": 0.42,
+      "amplitude": 107.2431,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8226590752601624,
+      "snapshot_url": "",
+      "id": 106
+    },
+    {
+      "timestamp": "2026-04-04T07:07:38.823943+00:00",
+      "structure_id": "person",
+      "frequency": 0.35,
+      "amplitude": 8.6622,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.3897291123867035,
+      "snapshot_url": "",
+      "id": 107
+    },
+    {
+      "timestamp": "2026-04-04T07:07:42.202853+00:00",
+      "structure_id": "person",
+      "frequency": 0.3,
+      "amplitude": 2.6442,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7218762636184692,
+      "snapshot_url": "",
+      "id": 108
+    },
+    {
+      "timestamp": "2026-04-04T07:07:46.250922+00:00",
+      "structure_id": "person",
+      "frequency": 0.25,
+      "amplitude": 3.2573,
+      "health_score": 10.5,
+      "threat_level": "DANGER",
+      "confidence": 0.6472603678703308,
+      "snapshot_url": "",
+      "id": 109
+    },
+    {
+      "timestamp": "2026-04-04T07:07:49.667948+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 26.9934,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8802019357681274,
+      "snapshot_url": "",
+      "id": 110
+    },
+    {
+      "timestamp": "2026-04-04T07:07:53.015183+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 30.7616,
+      "health_score": 12.1,
+      "threat_level": "DANGER",
+      "confidence": 0.6723412275314331,
+      "snapshot_url": "",
+      "id": 111
+    },
+    {
+      "timestamp": "2026-04-04T07:07:56.452838+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.1852,
+      "health_score": 8.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8233046531677246,
+      "snapshot_url": "",
+      "id": 112
+    },
+    {
+      "timestamp": "2026-04-04T07:08:01.029630+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.0514,
+      "health_score": 13.2,
+      "threat_level": "DANGER",
+      "confidence": 0.5120331645011902,
+      "snapshot_url": "",
+      "id": 113
+    },
+    {
+      "timestamp": "2026-04-04T07:08:06.738492+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.8481,
+      "health_score": 7.3,
+      "threat_level": "DANGER",
+      "confidence": 0.6662358045578003,
+      "snapshot_url": "",
+      "id": 114
+    },
+    {
+      "timestamp": "2026-04-04T07:08:10.188088+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 4.4901,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.4930708110332489,
+      "snapshot_url": "",
+      "id": 115
+    },
+    {
+      "timestamp": "2026-04-04T07:08:19.475996+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 20.6711,
+      "health_score": 6.3,
+      "threat_level": "DANGER",
+      "confidence": 0.5915247201919556,
+      "snapshot_url": "",
+      "id": 116
+    },
+    {
+      "timestamp": "2026-04-04T07:08:25.576952+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 19.9468,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.5624286532402039,
+      "snapshot_url": "",
+      "id": 117
+    },
+    {
+      "timestamp": "2026-04-04T07:08:35.261286+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 25.6784,
+      "health_score": 9.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6766226887702942,
+      "snapshot_url": "",
+      "id": 118
+    },
+    {
+      "timestamp": "2026-04-04T07:08:38.614636+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 5.3121,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8361440896987915,
+      "snapshot_url": "",
+      "id": 119
+    },
+    {
+      "timestamp": "2026-04-04T07:08:41.934544+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 32.6931,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8580297231674194,
+      "snapshot_url": "",
+      "id": 120
+    },
+    {
+      "timestamp": "2026-04-04T07:08:45.341290+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 5.5899,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.5513595342636108,
+      "snapshot_url": "",
+      "id": 121
+    },
+    {
+      "timestamp": "2026-04-04T07:08:48.667304+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 42.0322,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8561857342720032,
+      "snapshot_url": "",
+      "id": 122
+    },
+    {
+      "timestamp": "2026-04-04T07:08:51.967326+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.3272,
+      "health_score": 7.8,
+      "threat_level": "DANGER",
+      "confidence": 0.8540469408035278,
+      "snapshot_url": "",
+      "id": 123
+    },
+    {
+      "timestamp": "2026-04-04T07:08:55.332861+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 2.5438,
+      "health_score": 6.2,
+      "threat_level": "DANGER",
+      "confidence": 0.7644506096839905,
+      "snapshot_url": "",
+      "id": 124
+    },
+    {
+      "timestamp": "2026-04-04T07:08:58.639098+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 11.9883,
+      "health_score": 8.6,
+      "threat_level": "DANGER",
+      "confidence": 0.8613706827163696,
+      "snapshot_url": "",
+      "id": 125
+    },
+    {
+      "timestamp": "2026-04-04T07:09:02.059707+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 28.2767,
+      "health_score": 7.2,
+      "threat_level": "DANGER",
+      "confidence": 0.6414168477058411,
+      "snapshot_url": "",
+      "id": 126
+    },
+    {
+      "timestamp": "2026-04-04T07:09:05.519804+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 81.785,
+      "health_score": 14.3,
+      "threat_level": "DANGER",
+      "confidence": 0.7631773352622986,
+      "snapshot_url": "",
+      "id": 127
+    },
+    {
+      "timestamp": "2026-04-04T07:09:08.878561+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 7.9934,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6348435878753662,
+      "snapshot_url": "",
+      "id": 128
+    },
+    {
+      "timestamp": "2026-04-04T07:09:12.190711+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 6.6941,
+      "health_score": 5.6,
+      "threat_level": "DANGER",
+      "confidence": 0.7948377728462219,
+      "snapshot_url": "",
+      "id": 129
+    },
+    {
+      "timestamp": "2026-04-04T07:09:15.580998+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 5.0184,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7828804850578308,
+      "snapshot_url": "",
+      "id": 130
+    },
+    {
+      "timestamp": "2026-04-04T07:09:19.022531+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.4629,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8607484102249146,
+      "snapshot_url": "",
+      "id": 131
+    },
+    {
+      "timestamp": "2026-04-04T07:09:22.346486+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 11.0309,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.79459148645401,
+      "snapshot_url": "",
+      "id": 132
+    },
+    {
+      "timestamp": "2026-04-04T07:09:26.243588+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 44.3797,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8711267113685608,
+      "snapshot_url": "",
+      "id": 133
+    },
+    {
+      "timestamp": "2026-04-04T07:09:29.769330+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 26.7116,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.5358555316925049,
+      "snapshot_url": "",
+      "id": 134
+    },
+    {
+      "timestamp": "2026-04-04T07:09:33.080682+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 16.4199,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7001630067825317,
+      "snapshot_url": "",
+      "id": 135
+    },
+    {
+      "timestamp": "2026-04-04T07:09:36.478592+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 19.8179,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.863773763179779,
+      "snapshot_url": "",
+      "id": 136
+    },
+    {
+      "timestamp": "2026-04-04T07:09:39.900955+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 20.4009,
+      "health_score": 7.5,
+      "threat_level": "DANGER",
+      "confidence": 0.7932837009429932,
+      "snapshot_url": "",
+      "id": 137
+    },
+    {
+      "timestamp": "2026-04-04T07:09:45.781840+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 17.0273,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6765921711921692,
+      "snapshot_url": "",
+      "id": 138
+    },
+    {
+      "timestamp": "2026-04-04T07:09:49.582235+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 16.7548,
+      "health_score": 9.7,
+      "threat_level": "DANGER",
+      "confidence": 0.5226529240608215,
+      "snapshot_url": "",
+      "id": 139
+    },
+    {
+      "timestamp": "2026-04-04T07:09:52.892589+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 34.2741,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7505422234535217,
+      "snapshot_url": "",
+      "id": 140
+    },
+    {
+      "timestamp": "2026-04-04T07:09:56.535746+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 3.2949,
+      "health_score": 10.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6161040663719177,
+      "snapshot_url": "",
+      "id": 141
+    },
+    {
+      "timestamp": "2026-04-04T07:09:59.930818+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 11.1425,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6719143986701965,
+      "snapshot_url": "",
+      "id": 142
+    },
+    {
+      "timestamp": "2026-04-04T07:10:03.365256+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 3.4248,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.856586217880249,
+      "snapshot_url": "",
+      "id": 143
+    },
+    {
+      "timestamp": "2026-04-04T07:10:06.829776+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 3.7993,
+      "health_score": 11.3,
+      "threat_level": "DANGER",
+      "confidence": 0.35679125785827637,
+      "snapshot_url": "",
+      "id": 144
+    },
+    {
+      "timestamp": "2026-04-04T07:10:10.330616+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 4.2715,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9112311601638794,
+      "snapshot_url": "",
+      "id": 145
+    },
+    {
+      "timestamp": "2026-04-04T07:10:13.815078+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 9.8997,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7354642748832703,
+      "snapshot_url": "",
+      "id": 146
+    },
+    {
+      "timestamp": "2026-04-04T07:10:17.197713+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 17.8614,
+      "health_score": 7.1,
+      "threat_level": "DANGER",
+      "confidence": 0.612811803817749,
+      "snapshot_url": "",
+      "id": 147
+    },
+    {
+      "timestamp": "2026-04-04T07:10:23.023572+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 57.4276,
+      "health_score": 5.5,
+      "threat_level": "DANGER",
+      "confidence": 0.41696181893348694,
+      "snapshot_url": "",
+      "id": 148
+    },
+    {
+      "timestamp": "2026-04-04T07:10:29.690894+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 16.88,
+      "health_score": 5.6,
+      "threat_level": "DANGER",
+      "confidence": 0.594042181968689,
+      "snapshot_url": "",
+      "id": 149
+    },
+    {
+      "timestamp": "2026-04-04T07:10:33.003047+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 27.5417,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.29415205121040344,
+      "snapshot_url": "",
+      "id": 150
+    },
+    {
+      "timestamp": "2026-04-04T07:10:38.389493+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 1.2206,
+      "health_score": 7.3,
+      "threat_level": "DANGER",
+      "confidence": 0.7205349802970886,
+      "snapshot_url": "",
+      "id": 151
+    },
+    {
+      "timestamp": "2026-04-04T07:10:41.767444+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 5.6684,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9049206376075745,
+      "snapshot_url": "",
+      "id": 152
+    },
+    {
+      "timestamp": "2026-04-04T07:10:45.229269+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 9.4179,
+      "health_score": 8.0,
+      "threat_level": "DANGER",
+      "confidence": 0.622788667678833,
+      "snapshot_url": "",
+      "id": 153
+    },
+    {
+      "timestamp": "2026-04-04T07:10:52.864989+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.7323,
+      "health_score": 17.9,
+      "threat_level": "DANGER",
+      "confidence": 0.7693362236022949,
+      "snapshot_url": "",
+      "id": 154
+    },
+    {
+      "timestamp": "2026-04-04T07:10:56.290712+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 31.1203,
+      "health_score": 7.4,
+      "threat_level": "DANGER",
+      "confidence": 0.846989631652832,
+      "snapshot_url": "",
+      "id": 155
+    },
+    {
+      "timestamp": "2026-04-04T07:11:08.534731+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 77.1427,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8346163034439087,
+      "snapshot_url": "",
+      "id": 156
+    },
+    {
+      "timestamp": "2026-04-04T07:11:11.856148+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 10.2047,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8908754587173462,
+      "snapshot_url": "",
+      "id": 157
+    },
+    {
+      "timestamp": "2026-04-04T07:11:15.175003+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 57.8816,
+      "health_score": 8.1,
+      "threat_level": "DANGER",
+      "confidence": 0.7640011310577393,
+      "snapshot_url": "",
+      "id": 158
+    },
+    {
+      "timestamp": "2026-04-04T07:11:18.613923+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 4.4267,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.4620238244533539,
+      "snapshot_url": "",
+      "id": 159
+    },
+    {
+      "timestamp": "2026-04-04T07:11:22.090381+00:00",
+      "structure_id": "person",
+      "frequency": 1.41,
+      "amplitude": 8.195,
+      "health_score": 7.4,
+      "threat_level": "DANGER",
+      "confidence": 0.8647473454475403,
+      "snapshot_url": "",
+      "id": 160
+    },
+    {
+      "timestamp": "2026-04-04T07:11:25.529203+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 13.488,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8724709749221802,
+      "snapshot_url": "",
+      "id": 161
+    },
+    {
+      "timestamp": "2026-04-04T07:11:28.964413+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 2.7457,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.832239031791687,
+      "snapshot_url": "",
+      "id": 162
+    },
+    {
+      "timestamp": "2026-04-04T07:11:32.397382+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 12.1955,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.877711296081543,
+      "snapshot_url": "",
+      "id": 163
+    },
+    {
+      "timestamp": "2026-04-04T07:11:35.767711+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 12.6496,
+      "health_score": 5.3,
+      "threat_level": "DANGER",
+      "confidence": 0.7985557913780212,
+      "snapshot_url": "",
+      "id": 164
+    },
+    {
+      "timestamp": "2026-04-04T07:11:39.676801+00:00",
+      "structure_id": "person",
+      "frequency": 0.94,
+      "amplitude": 55.2703,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8762298822402954,
+      "snapshot_url": "",
+      "id": 165
+    },
+    {
+      "timestamp": "2026-04-04T07:11:43.119868+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.8787,
+      "health_score": 9.8,
+      "threat_level": "DANGER",
+      "confidence": 0.9033158421516418,
+      "snapshot_url": "",
+      "id": 166
+    },
+    {
+      "timestamp": "2026-04-04T07:11:51.244157+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 13.5572,
+      "health_score": 17.5,
+      "threat_level": "DANGER",
+      "confidence": 0.9183927178382874,
+      "snapshot_url": "",
+      "id": 167
+    },
+    {
+      "timestamp": "2026-04-04T07:11:59.693464+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 72.7328,
+      "health_score": 7.9,
+      "threat_level": "DANGER",
+      "confidence": 0.7274070978164673,
+      "snapshot_url": "",
+      "id": 168
+    },
+    {
+      "timestamp": "2026-04-04T07:12:03.012360+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 4.5463,
+      "health_score": 10.0,
+      "threat_level": "DANGER",
+      "confidence": 0.902149498462677,
+      "snapshot_url": "",
+      "id": 169
+    },
+    {
+      "timestamp": "2026-04-04T07:12:09.940362+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 11.7769,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.889795184135437,
+      "snapshot_url": "",
+      "id": 170
+    },
+    {
+      "timestamp": "2026-04-04T07:12:16.511497+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 1.4375,
+      "health_score": 6.7,
+      "threat_level": "DANGER",
+      "confidence": 0.9272149205207825,
+      "snapshot_url": "",
+      "id": 171
+    },
+    {
+      "timestamp": "2026-04-04T07:12:20.038526+00:00",
+      "structure_id": "person",
+      "frequency": 4.45,
+      "amplitude": 14.0485,
+      "health_score": 8.3,
+      "threat_level": "DANGER",
+      "confidence": 0.8617067337036133,
+      "snapshot_url": "",
+      "id": 172
+    },
+    {
+      "timestamp": "2026-04-04T07:12:23.494521+00:00",
+      "structure_id": "person",
+      "frequency": 0.7,
+      "amplitude": 8.4908,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8823156356811523,
+      "snapshot_url": "",
+      "id": 173
+    },
+    {
+      "timestamp": "2026-04-04T07:12:26.920913+00:00",
+      "structure_id": "person",
+      "frequency": 1.64,
+      "amplitude": 1.2781,
+      "health_score": 9.6,
+      "threat_level": "DANGER",
+      "confidence": 0.8261681199073792,
+      "snapshot_url": "",
+      "id": 174
+    },
+    {
+      "timestamp": "2026-04-04T07:12:33.702689+00:00",
+      "structure_id": "person",
+      "frequency": 0.47,
+      "amplitude": 5.7745,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.9374160170555115,
+      "snapshot_url": "",
+      "id": 175
+    },
+    {
+      "timestamp": "2026-04-04T07:12:37.287677+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 7.8807,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.7724275588989258,
+      "snapshot_url": "",
+      "id": 176
+    },
+    {
+      "timestamp": "2026-04-04T07:12:40.993789+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 20.7573,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.6072545051574707,
+      "snapshot_url": "",
+      "id": 177
+    },
+    {
+      "timestamp": "2026-04-04T07:12:44.531154+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 28.1726,
+      "health_score": 8.1,
+      "threat_level": "DANGER",
+      "confidence": 0.5186057090759277,
+      "snapshot_url": "",
+      "id": 178
+    },
+    {
+      "timestamp": "2026-04-04T07:12:48.155296+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.6368,
+      "health_score": 6.3,
+      "threat_level": "DANGER",
+      "confidence": 0.9176536798477173,
+      "snapshot_url": "",
+      "id": 179
+    },
+    {
+      "timestamp": "2026-04-04T07:12:52.024174+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 1.6509,
+      "health_score": 9.2,
+      "threat_level": "DANGER",
+      "confidence": 0.9226791858673096,
+      "snapshot_url": "",
+      "id": 180
+    },
+    {
+      "timestamp": "2026-04-04T07:12:55.482112+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 3.194,
+      "health_score": 18.8,
+      "threat_level": "DANGER",
+      "confidence": 0.9041873216629028,
+      "snapshot_url": "",
+      "id": 181
+    },
+    {
+      "timestamp": "2026-04-04T07:13:47.893095+00:00",
+      "structure_id": "tv",
+      "frequency": 0.0,
+      "amplitude": 195.2359,
+      "health_score": 24.0,
+      "threat_level": "DANGER",
+      "confidence": 0.32043617963790894,
+      "snapshot_url": "",
+      "id": 182
+    },
+    {
+      "timestamp": "2026-04-04T07:13:53.873976+00:00",
+      "structure_id": "cell phone",
+      "frequency": 0.0,
+      "amplitude": 80.3586,
+      "health_score": 14.5,
+      "threat_level": "DANGER",
+      "confidence": 0.3151724636554718,
+      "snapshot_url": "",
+      "id": 183
+    },
+    {
+      "timestamp": "2026-04-04T07:13:54.554836+00:00",
+      "structure_id": "chair",
+      "frequency": 0.0,
+      "amplitude": 24.4665,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.3432898223400116,
+      "snapshot_url": "",
+      "id": 184
+    },
+    {
+      "timestamp": "2026-04-04T09:28:43.118364+00:00",
+      "structure_id": "person",
+      "frequency": 1.58,
+      "amplitude": 1.222,
+      "health_score": 21.2,
+      "threat_level": "DANGER",
+      "confidence": 0.8981748223304749,
+      "snapshot_url": "",
+      "id": 185
+    },
+    {
+      "timestamp": "2026-04-04T09:28:46.555246+00:00",
+      "structure_id": "person",
+      "frequency": 1.67,
+      "amplitude": 1.6121,
+      "health_score": 9.9,
+      "threat_level": "DANGER",
+      "confidence": 0.9062556624412537,
+      "snapshot_url": "",
+      "id": 186
+    },
+    {
+      "timestamp": "2026-04-04T09:28:50.104514+00:00",
+      "structure_id": "person",
+      "frequency": 1.8,
+      "amplitude": 2.8544,
+      "health_score": 11.1,
+      "threat_level": "DANGER",
+      "confidence": 0.5799813270568848,
+      "snapshot_url": "",
+      "id": 187
+    },
+    {
+      "timestamp": "2026-04-04T09:28:53.507721+00:00",
+      "structure_id": "person",
+      "frequency": 1.36,
+      "amplitude": 1.3638,
+      "health_score": 22.0,
+      "threat_level": "DANGER",
+      "confidence": 0.823871374130249,
+      "snapshot_url": "",
+      "id": 188
+    },
+    {
+      "timestamp": "2026-04-04T09:28:57.026688+00:00",
+      "structure_id": "person",
+      "frequency": 1.46,
+      "amplitude": 5.1088,
+      "health_score": 6.8,
+      "threat_level": "DANGER",
+      "confidence": 0.9142499566078186,
+      "snapshot_url": "",
+      "id": 189
+    },
+    {
+      "timestamp": "2026-04-04T09:29:00.458155+00:00",
+      "structure_id": "person",
+      "frequency": 1.21,
+      "amplitude": 1.3995,
+      "health_score": 20.3,
+      "threat_level": "DANGER",
+      "confidence": 0.7685881853103638,
+      "snapshot_url": "",
+      "id": 190
+    },
+    {
+      "timestamp": "2026-04-04T09:29:17.248685+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 7.6223,
+      "health_score": 5.0,
+      "threat_level": "DANGER",
+      "confidence": 0.8055557608604431,
+      "snapshot_url": "",
+      "id": 191
+    },
+    {
+      "timestamp": "2026-04-04T09:29:20.679375+00:00",
+      "structure_id": "person",
+      "frequency": 0.23,
+      "amplitude": 8.7974,
+      "health_score": 8.2,
+      "threat_level": "DANGER",
+      "confidence": 0.7823922634124756,
+      "snapshot_url": "",
+      "id": 192
+    },
+    {
+      "timestamp": "2026-04-17T09:30:52.695090+00:00",
+      "structure_id": "person",
+      "frequency": 0.51,
+      "amplitude": 0.8159,
+      "health_score": 13.3,
+      "threat_level": "DANGER",
+      "confidence": 0.804568350315094,
+      "snapshot_url": "",
+      "id": 193
+    }
+  ],
+  "alerts": [
+    {
+      "timestamp": "2026-04-03T10:26:17.653023+00:00",
+      "contact_name": "Dr. Sarah Jenkins",
+      "role": "Chief Structural Engineer",
+      "email": "s.jenkins@vibrasense.ai",
+      "status": "TEST",
+      "id": 1
+    },
+    {
+      "timestamp": "2026-04-03T10:26:27.783345+00:00",
+      "contact_name": "Michael Chen",
+      "role": "Site Manager",
+      "email": "m.chen@construction.co",
+      "status": "TEST",
+      "id": 2
+    },
+    {
+      "timestamp": "2026-04-03T11:20:35.678218+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 3
+    },
+    {
+      "timestamp": "2026-04-03T11:20:38.822810+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 4
+    },
+    {
+      "timestamp": "2026-04-03T11:33:00.161244+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 5
+    },
+    {
+      "timestamp": "2026-04-03T11:33:03.406396+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 6
+    },
+    {
+      "timestamp": "2026-04-03T11:33:11.988312+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 7
+    },
+    {
+      "timestamp": "2026-04-03T11:33:22.198017+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 8
+    },
+    {
+      "timestamp": "2026-04-03T11:33:25.434846+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 9
+    },
+    {
+      "timestamp": "2026-04-03T11:33:34.869845+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 10
+    },
+    {
+      "timestamp": "2026-04-03T11:33:49.348646+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 11
+    },
+    {
+      "timestamp": "2026-04-03T11:33:58.255925+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 12
+    },
+    {
+      "timestamp": "2026-04-03T11:34:09.362436+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 13
+    },
+    {
+      "timestamp": "2026-04-03T11:34:20.346857+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 14
+    },
+    {
+      "timestamp": "2026-04-03T11:34:55.446397+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 15
+    },
+    {
+      "timestamp": "2026-04-03T11:34:58.616226+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 16
+    },
+    {
+      "timestamp": "2026-04-03T11:35:03.136777+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 17
+    },
+    {
+      "timestamp": "2026-04-03T11:35:08.101899+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 18
+    },
+    {
+      "timestamp": "2026-04-03T11:35:11.475310+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 19
+    },
+    {
+      "timestamp": "2026-04-03T15:39:38.733328+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 20
+    },
+    {
+      "timestamp": "2026-04-03T15:39:46.466142+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 21
+    },
+    {
+      "timestamp": "2026-04-03T15:39:54.039392+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 22
+    },
+    {
+      "timestamp": "2026-04-03T15:40:04.643488+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 23
+    },
+    {
+      "timestamp": "2026-04-03T15:40:32.753723+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 24
+    },
+    {
+      "timestamp": "2026-04-03T15:40:47.633406+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 25
+    },
+    {
+      "timestamp": "2026-04-03T15:41:00.781563+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 26
+    },
+    {
+      "timestamp": "2026-04-03T15:41:06.138004+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 27
+    },
+    {
+      "timestamp": "2026-04-03T15:41:09.421570+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 28
+    },
+    {
+      "timestamp": "2026-04-03T15:41:21.604059+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 29
+    },
+    {
+      "timestamp": "2026-04-03T15:41:24.854484+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 30
+    },
+    {
+      "timestamp": "2026-04-03T15:42:06.350177+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 31
+    },
+    {
+      "timestamp": "2026-04-03T15:42:09.484949+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 32
+    },
+    {
+      "timestamp": "2026-04-03T15:42:12.644802+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 33
+    },
+    {
+      "timestamp": "2026-04-03T15:44:47.505334+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 34
+    },
+    {
+      "timestamp": "2026-04-03T15:45:14.343538+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 35
+    },
+    {
+      "timestamp": "2026-04-03T15:46:31.401461+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 36
+    },
+    {
+      "timestamp": "2026-04-03T15:46:39.945276+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 37
+    },
+    {
+      "timestamp": "2026-04-03T15:52:36.692830+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 38
+    },
+    {
+      "timestamp": "2026-04-03T15:52:39.880977+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 39
+    },
+    {
+      "timestamp": "2026-04-03T15:53:30.672906+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 40
+    },
+    {
+      "timestamp": "2026-04-03T15:53:33.833996+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 41
+    },
+    {
+      "timestamp": "2026-04-03T15:53:58.416035+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 42
+    },
+    {
+      "timestamp": "2026-04-03T15:54:14.434977+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 43
+    },
+    {
+      "timestamp": "2026-04-03T15:54:18.537553+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 44
+    },
+    {
+      "timestamp": "2026-04-03T15:54:21.684326+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 45
+    },
+    {
+      "timestamp": "2026-04-03T15:54:27.130344+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 46
+    },
+    {
+      "timestamp": "2026-04-03T15:54:40.684498+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 47
+    },
+    {
+      "timestamp": "2026-04-03T15:54:54.872478+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 48
+    },
+    {
+      "timestamp": "2026-04-03T15:57:45.299494+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 49
+    },
+    {
+      "timestamp": "2026-04-03T15:57:55.454285+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 50
+    },
+    {
+      "timestamp": "2026-04-03T15:58:00.295858+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 51
+    },
+    {
+      "timestamp": "2026-04-03T15:58:11.213723+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 52
+    },
+    {
+      "timestamp": "2026-04-03T15:58:53.529161+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 53
+    },
+    {
+      "timestamp": "2026-04-03T15:58:57.193323+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 54
+    },
+    {
+      "timestamp": "2026-04-03T15:59:04.613269+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 55
+    },
+    {
+      "timestamp": "2026-04-03T15:59:50.700803+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 56
+    },
+    {
+      "timestamp": "2026-04-03T15:59:57.489391+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 57
+    },
+    {
+      "timestamp": "2026-04-03T16:00:04.263384+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 58
+    },
+    {
+      "timestamp": "2026-04-03T16:00:07.411052+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 59
+    },
+    {
+      "timestamp": "2026-04-03T16:00:10.547700+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 60
+    },
+    {
+      "timestamp": "2026-04-03T16:00:25.066874+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 61
+    },
+    {
+      "timestamp": "2026-04-03T16:00:29.071993+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 62
+    },
+    {
+      "timestamp": "2026-04-03T16:01:02.434614+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 63
+    },
+    {
+      "timestamp": "2026-04-03T16:01:13.758469+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 64
+    },
+    {
+      "timestamp": "2026-04-03T16:01:16.906464+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 65
+    },
+    {
+      "timestamp": "2026-04-03T16:01:40.138513+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 66
+    },
+    {
+      "timestamp": "2026-04-03T16:01:58.072851+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 67
+    },
+    {
+      "timestamp": "2026-04-03T16:02:01.212346+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 68
+    },
+    {
+      "timestamp": "2026-04-03T16:02:09.289595+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 69
+    },
+    {
+      "timestamp": "2026-04-03T16:02:12.502398+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 70
+    },
+    {
+      "timestamp": "2026-04-03T16:03:59.493007+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 71
+    },
+    {
+      "timestamp": "2026-04-03T16:04:20.894502+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 72
+    },
+    {
+      "timestamp": "2026-04-03T16:04:24.087294+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 73
+    },
+    {
+      "timestamp": "2026-04-04T04:07:09.690658+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 74
+    },
+    {
+      "timestamp": "2026-04-04T04:07:13.390012+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 75
+    },
+    {
+      "timestamp": "2026-04-04T04:07:16.997045+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 76
+    },
+    {
+      "timestamp": "2026-04-04T04:07:23.772813+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 77
+    },
+    {
+      "timestamp": "2026-04-04T04:07:27.373230+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 78
+    },
+    {
+      "timestamp": "2026-04-04T04:07:31.030915+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 79
+    },
+    {
+      "timestamp": "2026-04-04T04:07:34.412123+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 80
+    },
+    {
+      "timestamp": "2026-04-04T04:07:38.030075+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 81
+    },
+    {
+      "timestamp": "2026-04-04T04:07:41.570557+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 82
+    },
+    {
+      "timestamp": "2026-04-04T04:07:48.462663+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 83
+    },
+    {
+      "timestamp": "2026-04-04T04:07:52.071951+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 84
+    },
+    {
+      "timestamp": "2026-04-04T04:07:55.486177+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 85
+    },
+    {
+      "timestamp": "2026-04-04T04:07:59.067371+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 86
+    },
+    {
+      "timestamp": "2026-04-04T04:08:02.647923+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 87
+    },
+    {
+      "timestamp": "2026-04-04T04:08:10.022717+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 88
+    },
+    {
+      "timestamp": "2026-04-04T04:08:13.782649+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 89
+    },
+    {
+      "timestamp": "2026-04-04T05:49:32.101693+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 90
+    },
+    {
+      "timestamp": "2026-04-04T05:49:39.870472+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 91
+    },
+    {
+      "timestamp": "2026-04-04T05:49:46.691427+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 92
+    },
+    {
+      "timestamp": "2026-04-04T05:50:30.600788+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 93
+    },
+    {
+      "timestamp": "2026-04-04T05:50:34.972631+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 94
+    },
+    {
+      "timestamp": "2026-04-04T05:50:54.984089+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 95
+    },
+    {
+      "timestamp": "2026-04-04T05:50:58.695139+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 96
+    },
+    {
+      "timestamp": "2026-04-04T05:51:07.256331+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 97
+    },
+    {
+      "timestamp": "2026-04-04T05:51:24.683887+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 98
+    },
+    {
+      "timestamp": "2026-04-04T05:51:48.336784+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 99
+    },
+    {
+      "timestamp": "2026-04-04T05:52:10.112524+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "TEST",
+      "id": 100
+    },
+    {
+      "timestamp": "2026-04-04T05:52:21.314968+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 101
+    },
+    {
+      "timestamp": "2026-04-04T06:42:42.049313+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 102
+    },
+    {
+      "timestamp": "2026-04-04T07:07:23.924403+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 103
+    },
+    {
+      "timestamp": "2026-04-04T07:07:27.260916+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 104
+    },
+    {
+      "timestamp": "2026-04-04T07:07:30.652759+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 105
+    },
+    {
+      "timestamp": "2026-04-04T07:07:34.817707+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 106
+    },
+    {
+      "timestamp": "2026-04-04T07:07:38.823943+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 107
+    },
+    {
+      "timestamp": "2026-04-04T07:07:42.202853+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 108
+    },
+    {
+      "timestamp": "2026-04-04T07:07:46.250922+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 109
+    },
+    {
+      "timestamp": "2026-04-04T07:07:49.667948+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 110
+    },
+    {
+      "timestamp": "2026-04-04T07:07:53.015183+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 111
+    },
+    {
+      "timestamp": "2026-04-04T07:07:56.452838+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 112
+    },
+    {
+      "timestamp": "2026-04-04T07:08:01.029630+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 113
+    },
+    {
+      "timestamp": "2026-04-04T07:08:06.738492+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 114
+    },
+    {
+      "timestamp": "2026-04-04T07:08:10.188088+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 115
+    },
+    {
+      "timestamp": "2026-04-04T07:08:19.475996+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 116
+    },
+    {
+      "timestamp": "2026-04-04T07:08:25.576952+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 117
+    },
+    {
+      "timestamp": "2026-04-04T07:08:35.261286+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 118
+    },
+    {
+      "timestamp": "2026-04-04T07:08:38.614636+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 119
+    },
+    {
+      "timestamp": "2026-04-04T07:08:41.934544+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 120
+    },
+    {
+      "timestamp": "2026-04-04T07:08:45.341290+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 121
+    },
+    {
+      "timestamp": "2026-04-04T07:08:48.667304+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 122
+    },
+    {
+      "timestamp": "2026-04-04T07:08:51.967326+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 123
+    },
+    {
+      "timestamp": "2026-04-04T07:08:55.332861+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 124
+    },
+    {
+      "timestamp": "2026-04-04T07:08:58.639098+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 125
+    },
+    {
+      "timestamp": "2026-04-04T07:09:02.059707+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 126
+    },
+    {
+      "timestamp": "2026-04-04T07:09:05.519804+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 127
+    },
+    {
+      "timestamp": "2026-04-04T07:09:08.878561+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 128
+    },
+    {
+      "timestamp": "2026-04-04T07:09:12.190711+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 129
+    },
+    {
+      "timestamp": "2026-04-04T07:09:15.580998+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 130
+    },
+    {
+      "timestamp": "2026-04-04T07:09:19.022531+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 131
+    },
+    {
+      "timestamp": "2026-04-04T07:09:22.346486+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 132
+    },
+    {
+      "timestamp": "2026-04-04T07:09:26.243588+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 133
+    },
+    {
+      "timestamp": "2026-04-04T07:09:29.769330+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 134
+    },
+    {
+      "timestamp": "2026-04-04T07:09:33.080682+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 135
+    },
+    {
+      "timestamp": "2026-04-04T07:09:36.478592+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 136
+    },
+    {
+      "timestamp": "2026-04-04T07:09:39.900955+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 137
+    },
+    {
+      "timestamp": "2026-04-04T07:09:45.781840+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 138
+    },
+    {
+      "timestamp": "2026-04-04T07:09:49.582235+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 139
+    },
+    {
+      "timestamp": "2026-04-04T07:09:52.892589+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 140
+    },
+    {
+      "timestamp": "2026-04-04T07:09:56.535746+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 141
+    },
+    {
+      "timestamp": "2026-04-04T07:09:59.930818+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 142
+    },
+    {
+      "timestamp": "2026-04-04T07:10:03.365256+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 143
+    },
+    {
+      "timestamp": "2026-04-04T07:10:06.829776+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 144
+    },
+    {
+      "timestamp": "2026-04-04T07:10:10.330616+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 145
+    },
+    {
+      "timestamp": "2026-04-04T07:10:13.815078+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 146
+    },
+    {
+      "timestamp": "2026-04-04T07:10:17.197713+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 147
+    },
+    {
+      "timestamp": "2026-04-04T07:10:23.023572+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 148
+    },
+    {
+      "timestamp": "2026-04-04T07:10:29.690894+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 149
+    },
+    {
+      "timestamp": "2026-04-04T07:10:33.003047+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 150
+    },
+    {
+      "timestamp": "2026-04-04T07:10:38.389493+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 151
+    },
+    {
+      "timestamp": "2026-04-04T07:10:41.767444+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 152
+    },
+    {
+      "timestamp": "2026-04-04T07:10:45.229269+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 153
+    },
+    {
+      "timestamp": "2026-04-04T07:10:52.864989+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 154
+    },
+    {
+      "timestamp": "2026-04-04T07:10:56.290712+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 155
+    },
+    {
+      "timestamp": "2026-04-04T07:11:08.534731+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 156
+    },
+    {
+      "timestamp": "2026-04-04T07:11:11.856148+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 157
+    },
+    {
+      "timestamp": "2026-04-04T07:11:15.175003+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 158
+    },
+    {
+      "timestamp": "2026-04-04T07:11:18.613923+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 159
+    },
+    {
+      "timestamp": "2026-04-04T07:11:22.090381+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 160
+    },
+    {
+      "timestamp": "2026-04-04T07:11:25.529203+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 161
+    },
+    {
+      "timestamp": "2026-04-04T07:11:28.964413+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 162
+    },
+    {
+      "timestamp": "2026-04-04T07:11:32.397382+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 163
+    },
+    {
+      "timestamp": "2026-04-04T07:11:35.767711+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 164
+    },
+    {
+      "timestamp": "2026-04-04T07:11:39.676801+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 165
+    },
+    {
+      "timestamp": "2026-04-04T07:11:43.119868+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 166
+    },
+    {
+      "timestamp": "2026-04-04T07:11:51.244157+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 167
+    },
+    {
+      "timestamp": "2026-04-04T07:11:59.693464+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 168
+    },
+    {
+      "timestamp": "2026-04-04T07:12:03.012360+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 169
+    },
+    {
+      "timestamp": "2026-04-04T07:12:09.940362+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 170
+    },
+    {
+      "timestamp": "2026-04-04T07:12:16.511497+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 171
+    },
+    {
+      "timestamp": "2026-04-04T07:12:20.038526+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 172
+    },
+    {
+      "timestamp": "2026-04-04T07:12:20.038526+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 173
+    },
+    {
+      "timestamp": "2026-04-04T07:12:23.494521+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 174
+    },
+    {
+      "timestamp": "2026-04-04T07:12:23.494521+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 175
+    },
+    {
+      "timestamp": "2026-04-04T07:12:26.920913+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 176
+    },
+    {
+      "timestamp": "2026-04-04T07:12:26.920913+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 177
+    },
+    {
+      "timestamp": "2026-04-04T07:12:33.702689+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 178
+    },
+    {
+      "timestamp": "2026-04-04T07:12:33.702689+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 179
+    },
+    {
+      "timestamp": "2026-04-04T07:12:37.287677+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 180
+    },
+    {
+      "timestamp": "2026-04-04T07:12:37.287677+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 181
+    },
+    {
+      "timestamp": "2026-04-04T07:12:40.993789+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 182
+    },
+    {
+      "timestamp": "2026-04-04T07:12:40.993789+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 183
+    },
+    {
+      "timestamp": "2026-04-04T07:12:44.531154+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 184
+    },
+    {
+      "timestamp": "2026-04-04T07:12:44.531154+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 185
+    },
+    {
+      "timestamp": "2026-04-04T07:12:48.155296+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 186
+    },
+    {
+      "timestamp": "2026-04-04T07:12:48.155296+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 187
+    },
+    {
+      "timestamp": "2026-04-04T07:12:52.024174+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 188
+    },
+    {
+      "timestamp": "2026-04-04T07:12:52.024174+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 189
+    },
+    {
+      "timestamp": "2026-04-04T07:12:55.482112+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 190
+    },
+    {
+      "timestamp": "2026-04-04T07:12:55.482112+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 191
+    },
+    {
+      "timestamp": "2026-04-04T07:13:47.893095+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 192
+    },
+    {
+      "timestamp": "2026-04-04T07:13:47.893095+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 193
+    },
+    {
+      "timestamp": "2026-04-04T07:13:53.873976+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 194
+    },
+    {
+      "timestamp": "2026-04-04T07:13:53.873976+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 195
+    },
+    {
+      "timestamp": "2026-04-04T07:13:54.554836+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 196
+    },
+    {
+      "timestamp": "2026-04-04T07:13:54.554836+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 197
+    },
+    {
+      "timestamp": "2026-04-04T09:28:43.118364+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 198
+    },
+    {
+      "timestamp": "2026-04-04T09:28:43.118364+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 199
+    },
+    {
+      "timestamp": "2026-04-04T09:28:46.555246+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 200
+    },
+    {
+      "timestamp": "2026-04-04T09:28:46.555246+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 201
+    },
+    {
+      "timestamp": "2026-04-04T09:28:50.104514+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 202
+    },
+    {
+      "timestamp": "2026-04-04T09:28:50.104514+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 203
+    },
+    {
+      "timestamp": "2026-04-04T09:28:53.507721+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 204
+    },
+    {
+      "timestamp": "2026-04-04T09:28:53.507721+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 205
+    },
+    {
+      "timestamp": "2026-04-04T09:28:57.026688+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 206
+    },
+    {
+      "timestamp": "2026-04-04T09:28:57.026688+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 207
+    },
+    {
+      "timestamp": "2026-04-04T09:29:00.458155+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 208
+    },
+    {
+      "timestamp": "2026-04-04T09:29:00.458155+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 209
+    },
+    {
+      "timestamp": "2026-04-04T09:29:17.248685+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 210
+    },
+    {
+      "timestamp": "2026-04-04T09:29:17.248685+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 211
+    },
+    {
+      "timestamp": "2026-04-04T09:29:20.679375+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 212
+    },
+    {
+      "timestamp": "2026-04-04T09:29:20.679375+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 213
+    },
+    {
+      "timestamp": "2026-04-17T09:30:52.695090+00:00",
+      "contact_name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 214
+    },
+    {
+      "timestamp": "2026-04-17T09:30:52.695090+00:00",
+      "contact_name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "status": "FIRED",
+      "id": 215
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Adithya",
+      "role": "Site Engineer",
+      "email": "",
+      "phone": "09392801296",
+      "enabled": true,
+      "id": "1"
+    },
+    {
+      "name": "lkjgf,m",
+      "role": "Site Engineer",
+      "email": "",
+      "phone": "98765432",
+      "enabled": true,
+      "id": 2
+    }
+  ],
+  "settings": {
+    "per_frame_inference": "true",
+    "danger_threshold": "0.75",
+    "min_danger_duration": "3",
+    "stabilization_enabled": "true",
+    "notifications_muted": "false"
+  }
+}

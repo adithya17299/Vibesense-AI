@@ -1,0 +1,80 @@
+/* ── Live Feed Page ───────────────────────────────── */
+
+.livefeed-container {
+    display: flex;
+    gap: 16px;
+    height: calc(100vh - 100px);
+}
+
+.lf-camera-module {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #0c0c14;
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.lf-viewport {
+    flex: 1;
+    position: relative;
+    background: #080810;
+    overflow: hidden;
+}
+
+.lf-viewport canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Prevents stretching */
+}
+
+.lf-data-strip {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    backdrop-filter: blur(8px);
+}
+
+.lf-data-strip b {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.lf-side-panel {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.lf-clock {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 16px;
+    animation: clock-blink 1s step-end infinite;
+}
+
+@keyframes clock-blink {
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.lf-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 12px;
+}

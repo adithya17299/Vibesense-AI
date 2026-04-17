@@ -1,0 +1,427 @@
+/* ── Overview Page Styles ─────────────────────────── */
+
+/* Camera Module */
+.camera-module {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #0c0c14;
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.camera-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent);
+    border-bottom: 1px solid var(--border);
+}
+
+.camera-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-dim);
+}
+
+.rec-indicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--danger);
+}
+
+.rec-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--danger);
+    animation: rec-blink 1s infinite;
+}
+
+@keyframes rec-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Camera Viewport */
+.camera-viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    /* Ultra-wide as requested by the user's reference image */
+    background: #080810;
+    overflow: hidden;
+}
+
+.camera-viewport canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Scanline overlay */
+.scanline-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px);
+    z-index: 2;
+}
+
+/* Corner brackets */
+.viewport-bracket {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 3;
+}
+
+.viewport-bracket::before,
+.viewport-bracket::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.viewport-bracket.tl {
+    top: 8px;
+    left: 8px;
+}
+
+.viewport-bracket.tl::before {
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1px;
+}
+
+.viewport-bracket.tl::after {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 24px;
+}
+
+.viewport-bracket.tr {
+    top: 8px;
+    right: 8px;
+}
+
+.viewport-bracket.tr::before {
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 1px;
+}
+
+.viewport-bracket.tr::after {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 24px;
+}
+
+.viewport-bracket.bl {
+    bottom: 8px;
+    left: 8px;
+}
+
+.viewport-bracket.bl::before {
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 1px;
+}
+
+.viewport-bracket.bl::after {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 24px;
+}
+
+.viewport-bracket.br {
+    bottom: 8px;
+    right: 8px;
+}
+
+.viewport-bracket.br::before {
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 1px;
+}
+
+.viewport-bracket.br::after {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 24px;
+}
+
+/* Threat Meter */
+.threat-meter {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    backdrop-filter: blur(8px);
+}
+
+.tm-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+}
+
+.tm-item.active {
+    color: var(--text);
+}
+
+/* VU Meter */
+.vu-meter {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 14px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1px;
+}
+
+.vu-seg {
+    flex: 1;
+    border-radius: 1px;
+    opacity: 0.15;
+    transition: opacity 0.1s;
+}
+
+.vu-seg.green {
+    background: var(--success);
+}
+
+.vu-seg.amber {
+    background: var(--amber);
+}
+
+.vu-seg.red {
+    background: var(--danger);
+}
+
+.vu-seg.lit {
+    opacity: 1;
+    box-shadow: 0 0 4px currentColor;
+}
+
+/* Video Input Bar */
+.video-input-bar {
+    padding: 10px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* IP Camera Input Bar */
+.ipcam-input-bar {
+    padding: 10px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 212, 255, 0.02);
+}
+
+.ipcam-input-bar .skeuo-input {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* ── Health Score Gauge ──────────────────────────── */
+.health-gauge-container {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.health-gauge-container canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.health-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--mono);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.health-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--text-dim);
+    margin-top: 8px;
+}
+
+/* ── Status Lines ────────────────────────────────── */
+.status-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.status-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.sl-key {
+    color: var(--text-dim);
+    font-size: 10px;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.sl-val {
+    color: var(--text);
+    font-size: 11px;
+}
+
+/* ── Incident Reports ────────────────────────────── */
+.incident-list {
+    max-height: 250px;
+    /* Constrain height so the right column maps perfectly to the camera */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 4px;
+}
+
+.incident-empty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.incident-card {
+    background: #0f0f16;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 12px;
+}
+
+.incident-card .ic-thumb {
+    width: 80px;
+    height: 45px;
+    border-radius: 3px;
+    object-fit: cover;
+    background: #0a0a12;
+    border: 1px solid var(--border);
+}
+
+.incident-card .ic-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.incident-card .ic-ts {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+}
+
+.incident-card .ic-struct {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text);
+}
+
+.incident-card .ic-amp {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+/* Incident Status Badges */
+.incident-status {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    margin-top: 4px;
+}
+
+.incident-status.danger {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.incident-status.warning {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--amber);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.incident-status.normal {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}

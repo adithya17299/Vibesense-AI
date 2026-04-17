@@ -1,0 +1,131 @@
+/* ── Notifications Page ───────────────────────────── */
+
+.notif-empty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* Alert entries */
+.alert-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alert-entry:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.alert-entry.warning {
+    border-left: 4px solid var(--amber);
+    background: linear-gradient(90deg, rgba(234, 179, 8, 0.05), transparent);
+}
+
+.alert-entry.danger {
+    border-left: 4px solid var(--danger);
+    background: linear-gradient(90deg, rgba(239, 68, 68, 0.05), transparent);
+}
+
+.alert-entry .ae-ts {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+}
+
+.alert-entry .ae-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.alert-entry .ae-name {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text);
+}
+
+.alert-entry .ae-detail {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+/* Contact Cards */
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.contact-card .cc-info {
+    flex: 1;
+}
+
+.contact-card .cc-name {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.contact-card .cc-role {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-top: 2px;
+}
+
+.contact-card .cc-email {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.contact-card .cc-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Add Contact Form */
+.add-contact-form {
+    padding: 16px;
+    background: var(--bg-recessed);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .skeuo-input,
+.form-row .skeuo-select {
+    flex: 1;
+}

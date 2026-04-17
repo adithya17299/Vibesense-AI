@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibraSense AI — Control Center</title>
+    <meta name="description" content="VibraSense AI real-time structural health monitoring dashboard.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/overview.css">
+    <link rel="stylesheet" href="/css/livefeed.css">
+    <link rel="stylesheet" href="/css/historical.css">
+    <link rel="stylesheet" href="/css/notifications.css">
+    <link rel="stylesheet" href="/css/settings.css">
+</head>
+
+<body>
+    <!-- Toast Notification -->
+    <div id="alert-toast" class="toast-overlay">
+        <div class="toast-bar">
+            <div class="toast-icon"></div>
+            <span id="toast-message">■ ALERT DISPATCHED</span>
+        </div>
+    </div>
+
+    <!-- Snapshot Lightbox Modal -->
+    <div id="snapshot-modal" class="snapshot-modal" onclick="if(event.target===this)closeSnapshotModal()">
+        <div class="snapshot-modal-content">
+            <button class="snapshot-modal-close" onclick="closeSnapshotModal()">✕</button>
+            <img id="snapshot-modal-img" src="" alt="Snapshot">
+        </div>
+    </div>
+
+    <!-- Floating Island Navigation -->
+    <nav class="nav-island" id="nav-island">
+        <div class="nav-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2 12L12 2L22 12L12 22Z" />
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 5V2M12 22V19M5 12H2M22 12H19" />
+            </svg>
+            <span class="nav-logo-text">VIBRASENSE</span>
+            <span class="nav-logo-ai">AI</span>
+        </div>
+
+        <button class="nav-btn active" data-page="overview" id="nav-overview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+            <span>Overview</span>
+        </button>
+        <button class="nav-btn" data-page="livefeed" id="nav-livefeed">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10" />
+                <circle cx="12" cy="12" r="8" stroke-dasharray="3 3" />
+            </svg>
+            <span>Live Feed</span>
+        </button>
+        <button class="nav-btn" data-page="historical" id="nav-historical">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 12h4l3-9 4 18 3-9h4" />
+            </svg>
+            <span>Historical</span>
+        </button>
+        <button class="nav-btn" data-page="notifications" id="nav-notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+            </svg>
+            <span>Notifications</span>
+        </button>
+        <button class="nav-btn" data-page="settings" id="nav-settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                    d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+            </svg>
+            <span>Settings</span>
+        </button>
+
+        <div class="nav-heartbeat">
+            <div class="heartbeat-dot" id="heartbeat-dot"></div>
+            <span class="heartbeat-label">LIVE</span>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- OVERVIEW PAGE                              -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section id="page-overview" class="page-section active">
+            <div class="two-col">
+                <!-- Left Column (65%) -->
+                <div class="overview-left">
+                    <!-- Camera Feed -->
+                    <div class="camera-module">
+                        <div class="camera-top-bar"
+                            style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="camera-label">STRUCTURAL MONITOR</span>
+                            <div class="bridge-condition-status" id="bridge-condition-display" style="
+                                display: flex; align-items: center; gap: 8px; 
+                                padding: 4px 12px; background: rgba(5, 150, 105, 0.1); 
+                                border: 1px solid rgba(5, 150, 105, 0.3); border-radius: 20px;
+                                font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--success);
+                            ">
+                                <span class="led green" id="bridge-condition-led"></span> BRIDGE: SAFE (NOMINAL)
+                            </div>
+                            <div style="flex: 1;"></div>
+                            <div class="source-toggle segmented-control">
+                                <button class="seg-btn active" data-source="webcam" id="src-webcam">LIVE CAM</button>
+                                <button class="seg-btn" data-source="video" id="src-video">VIDEO INPUT</button>
+                                <button class="seg-btn" data-source="ipcam" id="src-ipcam">PHONE CAM</button>
+                            </div>
+                            <div class="rec-indicator"><span class="rec-dot"></span> REC</div>
+                        </div>
+                        <div class="camera-viewport" id="camera-viewport">
+                            <img id="camera-stream" src="/api/stream" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;z-index:0;" alt="Live Feed">
+                            <canvas id="camera-canvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;"></canvas>
+                            <div class="scanline-overlay"></div>
+                            <!-- Corner brackets -->
+                            <div class="viewport-bracket tl"></div>
+                            <div class="viewport-bracket tr"></div>
+                            <div class="viewport-bracket bl"></div>
+                            <div class="viewport-bracket br"></div>
+                            <!-- Threat meter (top-right) -->
+                            <div class="threat-meter" id="threat-meter">
+                                <div class="tm-item" id="tm-normal"><span class="led green pulse"></span> NORMAL</div>
+                                <div class="tm-item" id="tm-warning"><span class="led amber dim"></span> WARNING</div>
+                                <div class="tm-item" id="tm-danger"><span class="led red dim"></span> DANGER</div>
+                            </div>
+                            <!-- VU meter (right edge) -->
+                            <div class="vu-meter" id="vu-meter">
+                                <div class="vu-fill" id="vu-fill"></div>
+                                <div class="vu-segments">
+                                    <div class="vu-seg red"></div>
+                                    <div class="vu-seg red"></div>
+                                    <div class="vu-seg amber"></div>
+                                    <div class="vu-seg amber"></div>
+                                    <div class="vu-seg amber"></div>
+                                    <div class="vu-seg green"></div>
+                                    <div class="vu-seg green"></div>
+                                    <div class="vu-seg green"></div>
+                                    <div class="vu-seg green"></div>
+                                    <div class="vu-seg green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Video file input (hidden by default) -->
+                        <div class="video-input-bar" id="video-input-bar" style="display:none;">
+                            <input type="file" id="video-file-input" accept="video/*" class="skeuo-input"
+                                style="max-width:400px;">
+                            <span class="text-dim text-xs mono">SELECT VIDEO FILE FOR ANALYSIS</span>
+                        </div>
+                        <!-- IP Camera URL input (hidden by default) -->
+                        <div class="ipcam-input-bar" id="ipcam-input-bar" style="display:none;">
+                            <input type="text" id="ipcam-url-input" class="skeuo-input"
+                                placeholder="http://192.168.1.X:8080/video" style="flex:1; max-width:400px;">
+                            <button class="skeuo-btn primary" id="ipcam-connect-btn">CONNECT</button>
+                            <span class="text-dim text-xs mono" id="ipcam-status">ENTER IP WEBCAM STREAM URL</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column (45%) -->
+                <div class="overview-right">
+                    <!-- System Status -->
+                    <div class="skeuo-card">
+                        <div class="card-header">SYSTEM STATUS</div>
+                        <div class="card-body">
+                            <div class="status-lines">
+                                <div class="status-line"><span class="led green pulse"></span><span
+                                        class="sl-key">DETECTION MODE</span><span class="sl-val"
+                                        id="ss-detection">PER-FRAME</span></div>
+                                <div class="status-line"><span class="led green pulse"></span><span
+                                        class="sl-key">STABILIZATION</span><span class="sl-val"
+                                        id="ss-stab">ACTIVE</span></div>
+                                <div class="status-line"><span class="led amber pulse"></span><span
+                                        class="sl-key">TARGET LOCK</span><span class="sl-val"
+                                        id="ss-target">SCANNING...</span></div>
+                                <div class="status-line"><span class="led green pulse"></span><span
+                                        class="sl-key">FASTAPI</span><span class="sl-val">CONNECTED</span></div>
+                                <div class="status-line"><span class="led green pulse"></span><span
+                                        class="sl-key">SUPABASE</span><span class="sl-val">CONNECTED</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Incident Reports -->
+                    <div class="skeuo-card mt-16">
+                        <div class="card-header">AUTO-GENERATED INCIDENT REPORTS</div>
+                        <div class="card-body">
+                            <div class="incident-list" id="incident-list">
+                                <div class="incident-empty">
+                                    <span class="led green pulse"></span>
+                                    <span class="mono text-xs">ALL SYSTEMS NOMINAL — NO INCIDENTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section Data -->
+            <div class="overview-bottom mt-24">
+                <!-- Data Header -->
+                <div class="section-header">STRUCTURAL ANALYSIS & DIAGNOSTICS</div>
+
+                <!-- Three-col bottom grid -->
+                <div style="display: grid; grid-template-columns: 250px 1fr; gap: 20px;">
+                    <!-- Health Score Gauge -->
+                    <div class="skeuo-card"
+                        style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 24px;">
+                        <div class="health-gauge-container" style="margin: 0;">
+                            <canvas id="health-gauge" width="200" height="200"></canvas>
+                            <div class="health-value" id="health-value">85</div>
+                            <div class="health-label">STRUCTURAL HEALTH INDEX</div>
+                        </div>
+                    </div>
+
+                    <!-- Charts & Stats Wrapper -->
+                    <div>
+                        <!-- Stat Tiles -->
+                        <div class="stat-grid mb-16">
+                            <div class="stat-tile">
+                                <div class="stat-value" id="stat-freq">0.00<span class="text-dim text-sm">Hz</span>
+                                </div>
+                                <div class="stat-label">Live Frequency</div>
+                            </div>
+                            <div class="stat-tile">
+                                <div class="stat-value" id="stat-amp">0.00<span class="text-dim text-sm">mm</span></div>
+                                <div class="stat-label">Peak Amplitude</div>
+                            </div>
+                            <div class="stat-tile">
+                                <div class="stat-value" id="stat-joints">0</div>
+                                <div class="stat-label">Active Joints</div>
+                            </div>
+                            <div class="stat-tile">
+                                <div class="stat-value" id="stat-uptime">00:00:00</div>
+                                <div class="stat-label">Session Uptime</div>
+                            </div>
+                        </div>
+
+                        <!-- Charts -->
+                        <div class="chart-grid" style="margin-top: 0;">
+                            <div class="skeuo-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M3 12h4l3-9 4 18 3-9h4" />
+                                    </svg>
+                                    STRUCTURAL RESONANCE — TIME DOMAIN
+                                </div>
+                                <div class="card-body" style="height:200px;">
+                                    <canvas id="resonance-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="skeuo-card">
+                                <div class="card-header">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <rect x="3" y="12" width="3" height="9" />
+                                        <rect x="9" y="4" width="3" height="17" />
+                                        <rect x="15" y="8" width="3" height="13" />
+                                    </svg>
+                                    FFT FREQUENCY SPECTRUM
+                                </div>
+                                <div class="card-body" style="height:200px;">
+                                    <canvas id="fft-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- LIVE FEED PAGE                             -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section id="page-livefeed" class="page-section">
+            <div class="livefeed-container">
+                <div class="lf-camera-module">
+                    <div class="camera-top-bar"
+                        style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="camera-label">LIVE STRUCTURAL MONITOR — FULL VIEW</span>
+                        <div class="bridge-condition-status" id="lf-bridge-condition-display" style="
+                            display: flex; align-items: center; gap: 8px; 
+                            padding: 4px 12px; background: rgba(5, 150, 105, 0.1); 
+                            border: 1px solid rgba(5, 150, 105, 0.3); border-radius: 20px;
+                            font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--success);
+                        ">
+                            <span class="led green" id="lf-bridge-condition-led"></span> BRIDGE: SAFE (NOMINAL)
+                        </div>
+                        <div style="flex: 1;"></div>
+                        <div class="source-toggle segmented-control">
+                            <button class="seg-btn active" data-source="webcam" id="lf-src-webcam">LIVE CAM</button>
+                            <button class="seg-btn" data-source="video" id="lf-src-video">VIDEO INPUT</button>
+                            <button class="seg-btn" data-source="ipcam" id="lf-src-ipcam">PHONE CAM</button>
+                        </div>
+                        <div class="rec-indicator"><span class="rec-dot"></span> REC</div>
+                    </div>
+                    <div class="lf-viewport" id="lf-viewport">
+                        <img id="lf-stream" src="/api/stream" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;z-index:0;" alt="Live Feed">
+                        <canvas id="lf-canvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;"></canvas>
+                        <div class="scanline-overlay"></div>
+                        <div class="viewport-bracket tl"></div>
+                        <div class="viewport-bracket tr"></div>
+                        <div class="viewport-bracket bl"></div>
+                        <div class="viewport-bracket br"></div>
+                    </div>
+                    <!-- Bottom data strip -->
+                    <div class="lf-data-strip">
+                        <span>FREQ: <b id="lf-freq">0.00</b>Hz</span>
+                        <span>AMP: <b id="lf-amp">0.00</b>mm</span>
+                        <span>JOINTS: <b id="lf-joints">0</b></span>
+                        <span>HEALTH: <b id="lf-health">--</b></span>
+                        <span>THREAT: <b id="lf-threat" class="text-accent">NORMAL</b></span>
+                    </div>
+                    <!-- IP Camera URL input for Live Feed (hidden by default) -->
+                    <div class="ipcam-input-bar" id="lf-ipcam-input-bar" style="display:none;">
+                        <input type="text" id="lf-ipcam-url-input" class="skeuo-input"
+                            placeholder="http://192.168.1.X:8080/video" style="flex:1; max-width:400px;">
+                        <button class="skeuo-btn primary" id="lf-ipcam-connect-btn">CONNECT</button>
+                        <span class="text-dim text-xs mono" id="lf-ipcam-status">ENTER IP WEBCAM STREAM URL</span>
+                    </div>
+                </div>
+                <!-- Collapsible Right Panel -->
+                <div class="lf-side-panel" id="lf-side-panel">
+                    <div class="skeuo-card">
+                        <div class="card-header">SESSION</div>
+                        <div class="card-body">
+                            <div class="lf-clock" id="lf-clock">00:00:00</div>
+                            <div class="lf-stat-row">
+                                <span class="text-dim text-xs">FRAMES</span>
+                                <span class="mono" id="lf-frames">000000</span>
+                            </div>
+                            <div class="lf-stat-row mt-12">
+                                <span class="text-dim text-xs">CONFIDENCE</span>
+                            </div>
+                            <canvas id="lf-sparkline" width="140" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- HISTORICAL DATA PAGE                       -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section id="page-historical" class="page-section">
+            <div class="hist-filter-bar">
+                <input type="date" class="skeuo-input" id="hist-date-from" style="max-width:160px;">
+                <input type="date" class="skeuo-input" id="hist-date-to" style="max-width:160px;">
+                <div class="segmented-control">
+                    <button class="seg-btn active" data-type="All">ALL</button>
+                    <button class="seg-btn" data-type="Bridge">BRIDGE</button>
+                    <button class="seg-btn" data-type="Crane">CRANE</button>
+                    <button class="seg-btn" data-type="Building">BUILDING</button>
+                </div>
+                <input type="text" class="skeuo-input" placeholder="Search structure ID..." id="hist-search"
+                    style="max-width:220px;">
+                <button class="skeuo-btn primary" id="hist-filter-btn">FILTER</button>
+            </div>
+
+            <!-- Timeline Chart -->
+            <div class="skeuo-card mt-16">
+                <div class="card-header">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M3 12h4l3-9 4 18 3-9h4" />
+                    </svg>
+                    HISTORICAL TIMELINE — AMPLITUDE & FREQUENCY
+                </div>
+                <div class="card-body" style="height:250px;">
+                    <canvas id="timeline-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="skeuo-card mt-16">
+                <div class="card-header">SESSION RECORDS</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="data-table" id="hist-table">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Structure</th>
+                                <th>Frequency</th>
+                                <th>Amplitude</th>
+                                <th>Health</th>
+                                <th>Threat</th>
+                                <th>Confidence</th>
+                                <th>Snapshot</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="hist-tbody">
+                            <tr>
+                                <td colspan="9" class="text-dim text-xs mono" style="text-align:center;padding:40px;">NO
+                                    RECORDS — RUN ANALYSIS TO GENERATE DATA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="hist-pagination mt-16">
+                <button class="skeuo-btn" id="hist-prev">◀ PREV</button>
+                <span class="mono text-sm text-dim" id="hist-page-info">PAGE 1</span>
+                <button class="skeuo-btn" id="hist-next">NEXT ▶</button>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- NOTIFICATIONS PAGE                         -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section id="page-notifications" class="page-section">
+            <div class="two-col equal">
+                <!-- Left: Alert Log -->
+                <div>
+                    <div class="skeuo-card" style="height:calc(100vh - 120px);">
+                        <div class="card-header">INCIDENT ALERT LOG</div>
+                        <div class="card-body" style="overflow-y:auto; max-height:calc(100vh - 200px);">
+                            <div id="alert-log">
+                                <div class="notif-empty">
+                                    <span class="led green pulse"></span>
+                                    <span class="mono text-xs"> ALL SYSTEMS NOMINAL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Configuration -->
+                <div>
+                    <div class="skeuo-card">
+                        <div class="card-header">AUTHORITY CONTACT MATRIX</div>
+                        <div class="card-body">
+                            <div id="contacts-list"></div>
+
+                            <!-- Add Contact Form -->
+                            <div class="add-contact-form mt-16">
+                                <div class="form-row">
+                                    <input type="text" class="skeuo-input" placeholder="Name" id="c-name">
+                                    <select class="skeuo-select" id="c-role">
+                                        <option>Site Engineer</option>
+                                        <option>Safety Officer</option>
+                                        <option>Project Manager</option>
+                                        <option>Emergency Response</option>
+                                    </select>
+                                </div>
+                                <div class="form-row mt-12">
+                                    <input type="email" class="skeuo-input" placeholder="Email" id="c-email">
+                                    <input type="tel" class="skeuo-input" placeholder="Phone (optional)" id="c-phone">
+                                </div>
+                                <button class="skeuo-btn primary mt-12" id="add-contact-btn">+ ADD CONTACT</button>
+                            </div>
+
+                            <!-- Notification Threshold -->
+                            <div class="mt-24">
+                                <div class="section-header">NOTIFICATION THRESHOLD</div>
+                                <div class="segmented-control" id="notif-threshold">
+                                    <button class="seg-btn" data-val="warning">WARNING ONLY</button>
+                                    <button class="seg-btn active" data-val="both">BOTH</button>
+                                    <button class="seg-btn" data-val="danger">DANGER ONLY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SETTINGS PAGE                              -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section id="page-settings" class="page-section">
+            <div class="settings-grid">
+                <!-- Detection Settings -->
+                <div class="skeuo-card">
+                    <div class="card-header">DETECTION SETTINGS</div>
+                    <div class="card-body">
+                        <div class="setting-row">
+                            <div>
+                                <div class="setting-label">Per-Frame YOLOv8 Inference</div>
+                                <div class="setting-desc text-dim text-xs">Run detection on every single frame</div>
+                            </div>
+                            <label class="toggle-switch"><input type="checkbox" id="set-perframe" checked><span
+                                    class="toggle-slider"></span></label>
+                        </div>
+                        <div class="setting-row mt-16">
+                            <div class="setting-label">Danger Amplitude Threshold</div>
+                        </div>
+                        <div class="range-container mt-12">
+                            <div class="range-labels"><span class="text-xs" style="color:var(--success)">Normal:
+                                    0–0.3mm</span><span class="text-xs" style="color:var(--amber)">Warning:
+                                    0.3–0.7mm</span><span class="text-xs" style="color:var(--danger)">Danger:
+                                    &gt;0.7mm</span></div>
+                            <input type="range" class="skeuo-range" min="0" max="2" step="0.05" value="0.7"
+                                id="set-threshold">
+                            <div class="range-value mono" id="set-threshold-val">0.70mm</div>
+                        </div>
+                        <div class="setting-row mt-16">
+                            <div>
+                                <div class="setting-label">Minimum Danger Duration</div>
+                                <div class="setting-desc text-dim text-xs">Seconds before danger event fires</div>
+                            </div>
+                            <div class="number-stepper">
+                                <button class="skeuo-btn" id="dur-minus">−</button>
+                                <span class="mono" id="set-duration">3</span>
+                                <button class="skeuo-btn" id="dur-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="setting-row mt-16">
+                            <div>
+                                <div class="setting-label">Video Stabilization</div>
+                                <div class="setting-desc text-dim text-xs">ECC alignment to cancel camera shake</div>
+                            </div>
+                            <label class="toggle-switch"><input type="checkbox" id="set-stabilization" checked><span
+                                    class="toggle-slider"></span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camera Settings -->
+                <div class="skeuo-card">
+                    <div class="card-header">CAMERA SETTINGS</div>
+                    <div class="card-body">
+                        <div class="setting-row">
+                            <div class="setting-label">Webcam Source</div>
+                            <select class="skeuo-select" id="set-webcam-src">
+                                <option value="0">Default Camera (0)</option>
+                                <option value="1">Camera 1</option>
+                                <option value="2">Camera 2</option>
+                            </select>
+                        </div>
+                        <div class="setting-row mt-16">
+                            <div class="setting-label">Resolution</div>
+                            <div class="segmented-control">
+                                <button class="seg-btn active" data-res="640">640p</button>
+                                <button class="seg-btn" data-res="720">720p</button>
+                                <button class="seg-btn" data-res="1080">1080p</button>
+                            </div>
+                        </div>
+                        <div class="mt-16">
+                            <div class="setting-label mb-12">Camera Preview</div>
+                            <div class="camera-preview-box">
+                                <canvas id="settings-preview" width="280" height="158"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="skeuo-card">
+                    <div class="card-header">NOTIFICATION SETTINGS</div>
+                    <div class="card-body">
+                        <div id="settings-contacts-list"></div>
+                        <div class="setting-row mt-16">
+                            <div>
+                                <div class="setting-label">Global Mute</div>
+                                <div class="setting-desc text-dim text-xs">Silence all notifications</div>
+                            </div>
+                            <label class="toggle-switch"><input type="checkbox" id="set-mute"><span
+                                    class="toggle-slider"></span></label>
+                        </div>
+                        <div class="mute-banner" id="mute-banner" style="display:none;">NOTIFICATIONS MUTED</div>
+                    </div>
+                </div>
+
+                <!-- Data & Storage -->
+                <div class="skeuo-card">
+                    <div class="card-header">DATA & STORAGE</div>
+                    <div class="card-body">
+                        <div class="setting-row">
+                            <div class="setting-label">Supabase URL</div>
+                        </div>
+                        <input type="text" class="skeuo-input mono mt-12"
+                            value="https://pbzkilvjxxblgkpynjql.supabase.co" readonly id="set-sb-url">
+                        <div class="setting-row mt-16">
+                            <div class="setting-label">Max Records</div>
+                            <div class="number-stepper">
+                                <button class="skeuo-btn" id="rec-minus">−</button>
+                                <span class="mono" id="set-max-records">1000</span>
+                                <button class="skeuo-btn" id="rec-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-12 mt-16">
+                            <button class="skeuo-btn primary" id="btn-export">⬇ EXPORT CSV</button>
+                            <button class="skeuo-btn danger" id="btn-clear-data">✕ CLEAR ALL DATA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Info -->
+                <div class="skeuo-card" style="grid-column: span 2;">
+                    <div class="card-header">SYSTEM INFO</div>
+                    <div class="card-body">
+                        <div class="system-info-display recessed-panel">
+                            <div class="si-row"><span class="led green pulse"></span><span
+                                    class="sl-key">FastAPI</span><span class="sl-val">ONLINE</span></div>
+                            <div class="si-row"><span class="sl-key">YOLOv8 Model</span><span
+                                    class="sl-val mono">yolov8n.pt</span></div>
+                            <div class="si-row"><span class="sl-key">Inference Device</span><span
+                                    class="sl-val mono">MPS · Apple M1</span></div>
+                            <div class="si-row"><span class="sl-key">Backend Uptime</span><span class="sl-val mono"
+                                    id="si-uptime">00:00:00</span></div>
+                            <div class="si-row"><span class="sl-key">Frames Processed</span><span class="sl-val mono"
+                                    id="si-frames">000000</span></div>
+                        </div>
+
+                        <div class="section-header mt-16" style="font-size: 10px; opacity: 0.8;">LATENCY PROFILE (REAL-TIME)</div>
+                        <div class="system-info-display recessed-panel mt-8">
+                            <div class="si-row"><span class="sl-key">Capture</span><span class="sl-val mono" id="perf-cap">0.0ms</span></div>
+                            <div class="si-row"><span class="sl-key">Inference + Stab</span><span class="sl-val mono" id="perf-inf">0.0ms</span></div>
+                            <div class="si-row"><span class="sl-key">Render & Encode</span><span class="sl-val mono" id="perf-enc">0.0ms</span></div>
+                            <div class="si-row" style="border-top: 1px dashed rgba(255,255,255,0.05); padding-top: 4px; margin-top: 4px;">
+                                <span class="sl-key" style="font-weight: 700;">TOTAL LATENCY</span>
+                                <span class="sl-val mono" id="perf-total" style="color: var(--success); font-weight: 700;">0.0ms</span>
+                            </div>
+                            <div class="si-row"><span class="sl-key">Pipeline FPS</span><span class="sl-val mono" id="perf-fps">0.0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="/js/websocket.js"></script>
+    <script src="/js/gauges.js"></script>
+    <script src="/js/camera.js"></script>
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/overview.js"></script>
+    <script src="/js/livefeed.js"></script>
+    <script src="/js/historical.js"></script>
+    <script src="/js/notifications.js"></script>
+    <script src="/js/settings.js"></script>
+</body>
+
+</html>
